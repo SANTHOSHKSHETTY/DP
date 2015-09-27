@@ -1,7 +1,7 @@
-
-
-
 library(shiny)
+library(e1071)
+library(caret)
+library(randomForest)
 d<<-summary(iris)
 
 mod.nb<<-naiveBayes(iris[,1:4],iris[,5])
